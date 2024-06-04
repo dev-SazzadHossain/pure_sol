@@ -2,32 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ol,
+li {
+  list-style: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.textColor {
+  background-image: linear-gradient(
+    0deg,
+    #926efb 100%,
+    #465bd7 100%,
+    #4a56ab 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
+.backgroundColor {
+  background-image: linear-gradient(
+    0deg,
+    #926efb 100%,
+    #465bd7 100%,
+    #4a56ab 100%
+  );
+}
+.gradient-border {
+  border: 2px solid transparent;
+  border-image-source: linear-gradient(
+    133.89deg,
+    #926efb 2.43%,
+    #ffffff 51.07%
+  );
+  border-image-slice: 1;
+  border-radius: 10px;
+}
+
+.subText {
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    119.19deg,
+    #926efb 1.65%,
+    #465bd7 126.29%,
+    #4a56ab 126.29%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.workText {
+  background: rgba(111, 119, 130, 1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }

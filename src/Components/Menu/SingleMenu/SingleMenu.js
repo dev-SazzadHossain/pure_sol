@@ -1,5 +1,6 @@
 import { nunito, readexPro } from "@/utils/Font";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const SingleMenu = ({ menu }) => {
@@ -10,11 +11,12 @@ const SingleMenu = ({ menu }) => {
         <figure className={`w-[30px] h-[30px]`}>
           <Image src={img && img} alt="logo" />
         </figure>
-        <h2
+        <Link
+          href="#"
           className={`text-[22px] font-semibold ${readexPro.className}  text-[#333333]`}
         >
           {title}
-        </h2>
+        </Link>
       </div>
       <p
         className={`text-[16px] font-medium text-[#6F7782] ${nunito.className} text-start leading-[24px] pt-[16px]`}

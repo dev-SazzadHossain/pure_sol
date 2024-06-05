@@ -64,3 +64,12 @@ li {
   background-clip: text;
   color: transparent;
 }
+
+.button_bg {
+  background: linear-gradient(
+    119.19deg,
+    #926efb 1.65%,
+    #465bd7 126.29%,
+    #4a56ab 126.29%
+  );
+}

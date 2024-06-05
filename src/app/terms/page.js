@@ -3,7 +3,7 @@ import React from "react";
 
 const Terms = () => {
   return (
-    <div>
+    <div className="pt-[40px]">
       <h2
         className={`text-center py-[64px] backgroundColor text-[50px] font-semibold ${readexPro.className} text-white`}
       >
@@ -22,11 +22,11 @@ const Terms = () => {
             services. We encourage you to read these Terms thoroughly.
           </p>
           <div className="pt-[52px]">
-            <h3
+            <h4
               className={`text-[#4A326F] ${readexPro.className} font-bold text-[30px] `}
             >
               What We Expect from You
-            </h3>
+            </h4>
             <small
               className={`${nunito.className} text-[16px] font-bold text-[#6F7782]`}
             >
@@ -58,11 +58,11 @@ const Terms = () => {
           </div>
           {/* responsibilities */}
           <div className="pt-[52px]">
-            <h3
+            <h4
               className={`text-[#4A326F] ${readexPro.className} font-bold text-[30px] `}
             >
               Your Responsibilities
-            </h3>
+            </h4>
             <small
               className={`${nunito.className} text-[16px] font-bold text-[#6F7782]`}
             >
@@ -96,11 +96,11 @@ const Terms = () => {
 
           {/* commitment */}
           <div className="pt-[52px]">
-            <h3
+            <h4
               className={`text-[#4A326F] ${readexPro.className} font-bold text-[30px] `}
             >
               Your Responsibilities
-            </h3>
+            </h4>
             <p
               className={`${nunito.className} text-[16px] font-bold text-[#6F7782] leading-[24px]`}
             >
@@ -114,11 +114,11 @@ const Terms = () => {
 
           {/* Subscription and Payment */}
           <div className="pt-[52px]">
-            <h3
+            <h4
               className={`text-[#4A326F] ${readexPro.className} font-bold text-[30px] `}
             >
               Subscription and Payment{" "}
-            </h3>
+            </h4>
             <p
               className={`${nunito.className} text-[16px] font-bold text-[#6F7782] leading-[24px]`}
             >
@@ -133,11 +133,11 @@ const Terms = () => {
           {/* Termination Policy */}
 
           <div className="pt-[52px]">
-            <h3
+            <h4
               className={`text-[#4A326F] ${readexPro.className} font-bold text-[30px] `}
             >
               Termination Policy
-            </h3>
+            </h4>
             <p
               className={`${nunito.className} text-[16px] font-bold text-[#6F7782] leading-[24px]`}
             >
@@ -151,11 +151,11 @@ const Terms = () => {
 
           {/* Limitation of Liability */}
           <div className="pt-[52px]">
-            <h3
+            <h4
               className={`text-[#4A326F] ${readexPro.className} font-bold text-[30px] `}
             >
               Limitation of Liability
-            </h3>
+            </h4>
             <p
               className={`${nunito.className} text-[16px] font-bold text-[#6F7782] leading-[24px]`}
             >
@@ -169,11 +169,11 @@ const Terms = () => {
 
           {/* Privacy and Data Protection */}
           <div className="pt-[52px]">
-            <h3
+            <h4
               className={`text-[#4A326F] ${readexPro.className} font-bold text-[30px] `}
             >
               Privacy and Data Protection
-            </h3>
+            </h4>
             <p
               className={`${nunito.className} text-[16px] font-bold text-[#6F7782] leading-[24px]`}
             >
@@ -186,11 +186,11 @@ const Terms = () => {
           </div>
           {/* Intellectual Property Rights */}
           <div className="pt-[52px]">
-            <h3
+            <h4
               className={`text-[#4A326F] ${readexPro.className} font-bold text-[30px] `}
             >
               Intellectual Property Rights
-            </h3>
+            </h4>
             <p
               className={`${nunito.className} text-[16px] font-bold text-[#6F7782] leading-[24px]`}
             >
@@ -204,11 +204,11 @@ const Terms = () => {
 
           {/* Governing Law and Dispute Resolution */}
           <div className="pt-[52px]">
-            <h3
+            <h4
               className={`text-[#4A326F] ${readexPro.className} font-bold text-[30px] `}
             >
               Governing Law and Dispute Resolution
-            </h3>
+            </h4>
             <p
               className={`${nunito.className} text-[16px] font-bold text-[#6F7782] leading-[24px]`}
             >
@@ -224,11 +224,11 @@ const Terms = () => {
           {/* Changes to These Terms */}
 
           <div className="pt-[52px] pb-[80px]">
-            <h3
+            <h4
               className={`text-[#4A326F] ${readexPro.className} font-bold text-[30px] `}
             >
               Changes to These Terms
-            </h3>
+            </h4>
             <p
               className={`${nunito.className} text-[16px] font-bold text-[#6F7782] leading-[24px]`}
             >

@@ -10,7 +10,7 @@ import edit from "../../../public/assets/Group 8389.png";
 import Image from "next/image";
 const page = () => {
   return (
-    <div className="2xl:w-[1920px] xl:w-[1320px] lg:w-[1320px] md:w-full sm:w-full w-full mx-auto 2xl:px-0 xl:px-0 lg:px-0 px-5">
+    <div className="container mx-auto lg:px-0 px-5">
       <div className="lg:flex  justify-between py-20 ">
         <div className="lg:w-1/2 ">
           <h4

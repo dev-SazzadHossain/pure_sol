@@ -3,7 +3,7 @@ import React from "react";
 
 const Policy = () => {
   return (
-    <div>
+    <div className="pt-[40px]">
       <h2
         className={`text-center py-[64px] backgroundColor text-[50px] font-semibold ${readexPro.className} text-white`}
       >

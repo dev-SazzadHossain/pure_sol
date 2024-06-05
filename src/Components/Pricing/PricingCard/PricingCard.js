@@ -3,6 +3,7 @@ import React from "react";
 import icons from "../../../../public/assets/Basic Plan.png";
 import { nunito, readexPro } from "@/utils/Font";
 import rihgtIcons from "../../../../public/assets/Right Icon.png";
+import Link from "next/link";
 
 const PricingCard = ({ item }) => {
   const { items, id, buttonText } = item || {};
@@ -38,7 +39,7 @@ const PricingCard = ({ item }) => {
           <li
             className={`text-[##6F7782] ${nunito.className} text-[16px] font-medium`}
           >
-            {item?.items[0]}
+            <Link href="#"> {item?.items[0]}</Link>
           </li>
         </div>
         {/* one items */}
@@ -50,7 +51,7 @@ const PricingCard = ({ item }) => {
           <li
             className={`text-[##6F7782] ${nunito.className} text-[16px] font-medium`}
           >
-            {item?.items[1]}
+            <Link href="#"> {item?.items[1]}</Link>
           </li>
         </div>
         {/* one items */}
@@ -62,7 +63,7 @@ const PricingCard = ({ item }) => {
           <li
             className={`text-[##6F7782] ${nunito.className} text-[16px] font-medium`}
           >
-            {item?.items[2]}
+            <Link href="#"> {item?.items[2]}</Link>
           </li>
         </div>
         {/* one items */}
@@ -74,7 +75,7 @@ const PricingCard = ({ item }) => {
           <li
             className={`text-[##6F7782] ${nunito.className} text-[16px] font-medium`}
           >
-            {item?.items[3]}
+            <Link href="#"> {item?.items[3]}</Link>
           </li>
         </div>
         {/* one items */}
@@ -86,7 +87,7 @@ const PricingCard = ({ item }) => {
           <li
             className={`text-[##6F7782] ${nunito.className} text-[16px] font-medium`}
           >
-            {item?.items[4]}
+            <Link href="#"> {item?.items[4]}</Link>
           </li>
         </div>
         {/* one items */}
@@ -101,7 +102,7 @@ const PricingCard = ({ item }) => {
             <li
               className={`text-[##6F7782] ${nunito.className} text-[16px] font-medium`}
             >
-              {item?.items[5]}
+              <Link href="#"> {item?.items[5]}</Link>
             </li>
           </div>
         )}

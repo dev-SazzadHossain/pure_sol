@@ -11,25 +11,25 @@ import { nunito } from "@/utils/Font";
 
 export default function Home() {
   return (
-    <div>
+    <div className="container mx-auto lg:px-0 px-5">
       {/* middle */}
-      <div className="2xl:w-[1920px] xl:w-[1320px] lg:w-[1320px] md:w-full sm:w-full w-full mx-auto 2xl:px-0 xl:px-0 lg:px-0 px-5">
+      <section className=" w-full ">
         {" "}
         <div className="py-[154px]">
           <Hero />
         </div>
-      </div>
+      </section>
       {/* middle */}
-      <div className=" relative">
+      <section className=" relative">
         <SubHero />
-      </div>
-      <div className="py-[93px] 2xl:w-[1920px] xl:w-[1320px] lg:w-[1320px] md:w-full sm:w-full w-full mx-auto 2xl:px-0 xl:px-0 lg:px-0 px-5">
+      </section>
+      <section className="w-full">
         <Work />
         <Menu />
         <MoneyBack />
         <Pricing />
         <Faq />
-      </div>
+      </section>
     </div>
   );
 }

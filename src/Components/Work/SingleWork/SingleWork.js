@@ -1,4 +1,5 @@
 import { nunito, readexPro } from "@/utils/Font";
+import Link from "next/link";
 import React from "react";
 
 const SingleWork = ({ work }) => {
@@ -12,11 +13,12 @@ const SingleWork = ({ work }) => {
           {id}.
         </span>
       </div>
-      <h2
+      <Link
+        href="#"
         className={`subText text-[22px] font-semibold ${readexPro.className} pb-[10px]`}
       >
         {title}
-      </h2>
+      </Link>
       <p
         className={`text-[16px] font-medium workText ${nunito.className} text-justify leading-[24px]`}
       >

@@ -26,17 +26,17 @@ const singleWork = [
 const Work = () => {
   return (
     <div id="work">
-      <h2
+      <h3
         className={`text-center textColor font-bold text-[20px] ${readexPro.className}`}
       >
         {" "}
         automate your business
-      </h2>
-      <h1
+      </h3>
+      <h2
         className={`text-center text-[#4A326F] font-semibold text-[50px] ${readexPro.className} py-[24px]`}
       >
         How does it work?
-      </h1>
+      </h2>
       <p
         className={`text-center text-[#6F7782] font-medium text-[16px] ${nunito.className} leading-[24px] workText`}
       >

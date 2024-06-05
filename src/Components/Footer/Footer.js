@@ -7,8 +7,9 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="pt-[120px] ">
-      <div className="w-full flex justify-between lg:items-center">
+    <>
+      {" "}
+      <div className=" w-full flex justify-between lg:items-center">
         {/* logo  */}
         <Link href="/">
           <figure className="w-[242px] h-[46px]">
@@ -19,28 +20,28 @@ const Footer = () => {
           <li
             className={`text-[#754DE9]  font-semibold ${readexPro.className} text-[18px]`}
           >
-            How Does it Work?
+            <Link href="#work">How Does it Work?</Link>
           </li>
           <li
             className={`text-[#754DE9]  font-semibold ${readexPro.className} text-[18px]`}
           >
-            Solutions
+            <Link href="#solution"> Solutions</Link>
           </li>
           <li
             className={`text-[#754DE9]  font-semibold ${readexPro.className} text-[18px]`}
           >
-            Pricing
+            <Link href="#pricing"> Pricing</Link>
           </li>
           <li
             className={`text-[#754DE9]  font-semibold ${readexPro.className} text-[18px]`}
           >
-            Help
+            <Link href="#">Help</Link>
           </li>
           <ul>
             <li
               className={`text-[#754DE9]  font-semibold ${readexPro.className} text-[18px]`}
             >
-              Legal
+              <Link href="#"> Legal</Link>
             </li>
             <li
               className={`text-[#6F7782]  font-medium ${nunito.className} text-[16px] pt-2`}
@@ -74,7 +75,7 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -14,14 +14,18 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="2xl:w-[1920px] xl:w-[1320px] lg:w-[1320px] md:w-full sm:w-full w-full mx-auto 2xl:px-0 xl:px-0 lg:px-0 px-5">
-          <Header />
-        </div>
-        {children}
-        <div className="bg-[#F4F1FD]">
-          <div className="2xl:w-[1920px] xl:w-[1320px] lg:w-[1320px] md:w-full sm:w-full w-full mx-auto 2xl:px-0 xl:px-0 lg:px-0 px-5">
-            <Footer />
-          </div>
+        <div className="main_section">
+          <main>
+            <header className="container mx-auto lg:px-0 md:px-5 px-5">
+              <Header />
+            </header>
+            {children}
+            <footer className="bg-[#F4F1FD]">
+              <div className="container mx-auto lg:px-0 px-5 pt-[120px]">
+                <Footer />
+              </div>
+            </footer>
+          </main>
         </div>
       </body>
     </html>

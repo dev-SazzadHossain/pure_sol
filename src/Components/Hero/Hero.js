@@ -1,11 +1,13 @@
 import CustomButton from "@/utils/CustomButton/CustomButton";
 import { nunito } from "@/utils/Font";
 import { Readex_Pro } from "next/font/google";
+import Link from "next/link";
 import React from "react";
 const readexPro = Readex_Pro({ subsets: ["latin"] });
 const Hero = () => {
   return (
-    <div>
+    <>
+      {" "}
       <div className=" leading-[90px]">
         <h1
           className={`${readexPro.className} text-[64px] font-bold text-[#4A326F] text-center`}
@@ -25,13 +27,14 @@ const Hero = () => {
         and more...
       </p>
       <div className="text-center">
-        <button
+        <Link
+          href="/contact"
           className={` shadow shadow-[#9747FF] p-custom  rounded-[10px] font-semibold text-[16px] ${nunito.className}`}
         >
           Book a discovery call
-        </button>
+        </Link>
       </div>
-    </div>
+    </>
   );
 };
 

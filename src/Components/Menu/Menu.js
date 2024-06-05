@@ -8,7 +8,7 @@ import img4 from "../../../public/assets/Vector (3).png";
 import img5 from "../../../public/assets/Vector (4).png";
 import img6 from "../../../public/assets/Success Rate.png";
 import img7 from "../../../public/assets/Vector (6).png";
-import img8 from "../../../public/assets/Basic Plan.png";
+import img8 from "../../../public/assets/hand.png";
 
 const menuItems = [
   {
@@ -72,17 +72,17 @@ const menuItems = [
 const Menu = () => {
   return (
     <div className="py-[64px]">
-      <h2
+      <h3
         className={`text-center textColor font-bold text-[20px] ${readexPro.className} tracking-wider`}
       >
         {" "}
         we build what scales your business
-      </h2>
-      <h1
+      </h3>
+      <h2
         className={`text-center text-[#4A326F] font-semibold text-[50px] ${readexPro.className} py-[20px]`}
       >
         How does it menu?
-      </h1>
+      </h2>
 
       <p
         className={`text-center text-[#6F7782] font-medium text-[16px] ${nunito.className} leading-[24px] menuText`}

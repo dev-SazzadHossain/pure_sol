@@ -1,7 +1,7 @@
 import { nunito, readexPro } from "@/utils/Font";
 import Image from "next/image";
 import React from "react";
-import position from "../../../public/assets/Group 8381.png";
+import position from "../../../public/assets1/assets/group_1.png";
 
 const SubHero = () => {
   return (

@@ -1,14 +1,14 @@
 import React from "react";
 import SingleMenu from "./SingleMenu/SingleMenu";
 import { nunito, readexPro } from "@/utils/Font";
-import img1 from "../../../public/assets/Vector.png";
-import img2 from "../../../public/assets/Vector (1).png";
-import img3 from "../../../public/assets/Vector (2).png";
-import img4 from "../../../public/assets/Vector (3).png";
-import img5 from "../../../public/assets/Vector (4).png";
-import img6 from "../../../public/assets/Success Rate.png";
-import img7 from "../../../public/assets/Vector (6).png";
-import img8 from "../../../public/assets/hand.png";
+import img1 from "../../../public/assets1/assets/vector.png";
+import img2 from "../../../public/assets1/assets/vector_1.png";
+import img3 from "../../../public/assets1/assets/vector_2.png";
+import img4 from "../../../public/assets1/assets/vector_3.png";
+import img5 from "../../../public/assets1/assets/vector_4.png";
+import img6 from "../../../public/assets1/assets/success.png";
+import img7 from "../../../public/assets1/assets/vector_6.png";
+import img8 from "../../../public/assets1/assets/hand.png";
 
 const menuItems = [
   {

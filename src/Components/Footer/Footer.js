@@ -1,7 +1,8 @@
 import React from "react";
 import logo from "../../../public/assets/Main Logo.png";
 import Image from "next/image";
-import { readexPro } from "@/utils/Font";
+import { nunito, readexPro } from "@/utils/Font";
+import footer_logo from "../../../public/assets/footer.png";
 
 const Footer = () => {
   return (
@@ -50,6 +51,23 @@ const Footer = () => {
             </li>
           </ul>
         </ul>
+      </div>
+      <div className="flex items-center justify-center gap-[18px] pt-10">
+        <p
+          className={`text-[#000000] font-medium ${nunito.className} text-[16px]`}
+        >
+          © Copyright 2024. All rights reserved by
+        </p>
+        <div className="mr-4">
+          <figure>
+            <Image
+              src={footer_logo}
+              alt="Footer Logo"
+              width={143}
+              height={18}
+            />
+          </figure>
+        </div>
       </div>
     </div>
   );

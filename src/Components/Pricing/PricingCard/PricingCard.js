@@ -109,7 +109,11 @@ const PricingCard = ({ item }) => {
 
         <div className="flex justify-center items-center pt-[32px]">
           <button
-            className={`px-[36px] py-[12px] backgroundColor rounded-[16px] border-[1px] border-[#4A326F] text-[16px] font-semibold  ${nunito.className} text-white`}
+            className={`px-[36px] py-[12px] ${
+              item?.id == 3 ? "text-black" : "backgroundColor text-white"
+            } rounded-[16px] border-[1px] border-[#4A326F] text-[16px] font-semibold  ${
+              nunito.className
+            } `}
           >
             {item?.buttonText}
           </button>

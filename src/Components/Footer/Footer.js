@@ -40,12 +40,12 @@ const Footer = () => {
               Legal
             </li>
             <li
-              className={`text-[#6F7782]  font-semibold ${readexPro.className} text-[16px] pt-2`}
+              className={`text-[#6F7782]  font-medium ${readexPro.className} text-[16px] pt-2`}
             >
               Privacy Policy
             </li>
             <li
-              className={`text-[#6F7782]  font-semibold ${readexPro.className} text-[16px] py-2`}
+              className={`text-[#6F7782]  font-medium ${nunito.className} text-[16px] py-2`}
             >
               Terms & Condition
             </li>

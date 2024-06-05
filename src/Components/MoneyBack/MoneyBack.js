@@ -1,7 +1,7 @@
 import { nunito, readexPro } from "@/utils/Font";
 import Image from "next/image";
 import React from "react";
-import img from "../../../public/assets/Group 8402.png";
+import img from "../../../public/assets1/assets/group_2.png";
 
 const MoneyBack = () => {
   return (

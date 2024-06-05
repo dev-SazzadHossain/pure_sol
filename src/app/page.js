@@ -1,6 +1,5 @@
 import Faq from "@/Components/Faq/Faq";
 import Footer from "@/Components/Footer/Footer";
-import Header from "@/Components/Header/Header";
 import Hero from "@/Components/Hero/Hero";
 import Menu from "@/Components/Menu/Menu";
 import MoneyBack from "@/Components/MoneyBack/MoneyBack";
@@ -16,7 +15,6 @@ export default function Home() {
       {/* middle */}
       <div className="2xl:w-[1920px] xl:w-[1320px] lg:w-[1320px] md:w-full sm:w-full w-full mx-auto 2xl:px-0 xl:px-0 lg:px-0 px-5">
         {" "}
-        <Header />
         <div className="py-[154px]">
           <Hero />
         </div>
@@ -31,10 +29,6 @@ export default function Home() {
         <MoneyBack />
         <Pricing />
         <Faq />
-      </div>
-      <div className="2xl:w-[1920px] xl:w-[1320px] lg:w-[1320px] md:w-full sm:w-full w-full mx-auto 2xl:px-0 xl:px-0 lg:px-0 px-5">
-        {" "}
-        <Footer />
       </div>
     </div>
   );

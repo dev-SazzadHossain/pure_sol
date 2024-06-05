@@ -3,15 +3,18 @@ import logo from "../../../public/assets/Main Logo.png";
 import Image from "next/image";
 import { nunito, readexPro } from "@/utils/Font";
 import footer_logo from "../../../public/assets/footer.png";
+import Link from "next/link";
 
 const Footer = () => {
   return (
     <div className="py-[120px] ">
       <div className="w-full flex justify-between lg:items-center">
         {/* logo  */}
-        <figure className="w-[242px] h-[46px]">
-          <Image src={logo} alt="logo" width={242} height={46} />
-        </figure>
+        <Link href="/">
+          <figure className="w-[242px] h-[46px]">
+            <Image src={logo} alt="logo" width={242} height={46} />
+          </figure>
+        </Link>
         <ul className="lg:flex gap-20">
           <li
             className={`text-[#754DE9]  font-semibold ${readexPro.className} text-[18px]`}
@@ -40,14 +43,14 @@ const Footer = () => {
               Legal
             </li>
             <li
-              className={`text-[#6F7782]  font-medium ${readexPro.className} text-[16px] pt-2`}
+              className={`text-[#6F7782]  font-medium ${nunito.className} text-[16px] pt-2`}
             >
-              Privacy Policy
+              <Link href="/policy">Privacy Policy</Link>
             </li>
             <li
               className={`text-[#6F7782]  font-medium ${nunito.className} text-[16px] py-2`}
             >
-              Terms & Condition
+              <Link href="/term">Terms & Condition</Link>
             </li>
           </ul>
         </ul>

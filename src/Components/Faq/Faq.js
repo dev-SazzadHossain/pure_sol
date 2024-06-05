@@ -61,46 +61,103 @@ const Faq = () => {
       >
         Have a question?
       </h1>
-      <div className="grid lg:grid-cols-2 grid-cols-1 gap-x-[36px] gap-y-[24px]">
-        {faqData.map((item, index) => (
-          <div
-            key={index}
-            className={`border p-4 rounded transition-all duration-300 ease-in-out ${
-              openIndex === index
-                ? "backgroundColor text-white"
-                : "bg-[#FAFAFC]"
-            }`}
-          >
+      <div>
+        {/* <div className="grid lg:grid-cols-2 grid-cols-1 gap-x-[36px] gap-y-[24px]">
+          {faqData.map((item, index) => (
             <div
-              className="cursor-pointer flex justify-between items-center"
-              onClick={() => handleClick(index)}
-            >
-              <h2
-                className={`text-[18px] font-semibold ${readexPro.className} ${
-                  openIndex == index ? "text-white" : "text-[#333333]"
-                }`}
-              >
-                {item.question}
-              </h2>
-              <span>
-                {openIndex === index ? (
-                  <Image src={minus} alt="minus" width={24} height={24} />
-                ) : (
-                  <Image src={plus} alt="plus" width={24} height={24} />
-                )}
-              </span>
-            </div>
-            <div
-              className={`overflow-hidden transition-all duration-500 ease-in-out  ${
+              key={index}
+              className={`border p-4 rounded transition-all duration-300 ease-in-out ${
                 openIndex === index
-                  ? `max-h-96 opacity-100  2xl:w-[520px] xl:w-[520px] lg:w-[520px] w-full pt-[10px] ${nunito.className} font-medium text-[16px]`
-                  : "max-h-0 opacity-0"
+                  ? "backgroundColor text-white"
+                  : "bg-[#FAFAFC]"
               }`}
             >
-              <p className="mt-2">{item.answer}</p>
+              <div
+                className="cursor-pointer flex justify-between items-center"
+                onClick={() => handleClick(index)}
+              >
+                <h2
+                  className={`text-[18px] font-semibold ${
+                    openIndex === index ? "text-white" : "text-[#333333]"
+                  }`}
+                >
+                  {item.question}
+                </h2>
+                <span>
+                  {openIndex === index ? (
+                    <Image src={minus} alt="minus" width={24} height={24} />
+                  ) : (
+                    <Image src={plus} alt="plus" width={24} height={24} />
+                  )}
+                </span>
+              </div>
+              <div
+                className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                  openIndex === index
+                    ? "max-h-[300px] opacity-100 pt-[10px]"
+                    : "max-h-0 opacity-0"
+                }`}
+              >
+                <p
+                  className={`mt-2 ${
+                    openIndex === index ? "block" : "hidden"
+                  } ${nunito.className} font-medium text-[16px]`}
+                >
+                  {item.answer}
+                </p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div> */}
+      </div>
+      <div className="faq-section mx-auto ">
+        <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 ">
+          {faqData.map((item, index) => (
+            <div
+              key={index}
+              className="faq-item transition-all duration-300 ease-linear rounded-md"
+            >
+              <div
+                className={`flex items-center justify-between cursor-pointer p-5  rounded-t-md  ${
+                  openIndex === index
+                    ? "backgroundColor text-white "
+                    : "bg-[#FAFAFC] rounded-b-md"
+                }`}
+                onClick={() => handleClick(index)}
+              >
+                <h3
+                  className={`faq-question text-[18px] font-semibold ${
+                    openIndex == index ? "" : "text-[#333333]"
+                  } ${readexPro.className}`}
+                >
+                  {item.question}
+                </h3>
+                <span>
+                  {openIndex === index ? (
+                    <Image src={minus} alt="minus" width={24} height={24} />
+                  ) : (
+                    <Image src={plus} alt="plus" width={24} height={24} />
+                  )}
+                </span>
+              </div>
+              <div
+                className={`faq-answer overflow-hidden transition-all duration-300 ease-linear ${nunito.className} text-[16px] leading-[30px] rounded-b-md`}
+                style={{
+                  maxHeight: openIndex === index ? "100px" : "0px",
+                  opacity: openIndex === index ? 1 : 0,
+                }}
+              >
+                <div
+                  className={`${
+                    openIndex == index ? "backgroundColor p-4 text-white" : ""
+                  }`}
+                >
+                  {item.answer}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

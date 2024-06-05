@@ -2,11 +2,11 @@ import Faq from "@/Components/Faq/Faq";
 import MoneyBack from "@/Components/MoneyBack/MoneyBack";
 import { nunito, readexPro } from "@/utils/Font";
 import React from "react";
-import name from "../../../public/assets/Union (1).png";
-import phone from "../../../public/assets/Call Icon.png";
-import email from "../../../public/assets/Email Icon.png";
-import subject from "../../../public/assets/Group.png";
-import edit from "../../../public/assets/Group 8389.png";
+import name from "../../../public/assets1/assets/unique_1.png";
+import phone from "../../../public/assets1/assets/call_icons.png";
+import email from "../../../public/assets1/assets/email_icon.png";
+import subject from "../../../public/assets1/assets/group_4.png";
+import edit from "../../../public/assets1/assets/group_3.png";
 import Image from "next/image";
 const page = () => {
   return (

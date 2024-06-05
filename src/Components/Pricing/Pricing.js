@@ -4,6 +4,10 @@ import PricingCard from "./PricingCard/PricingCard";
 const pricingItems = [
   {
     id: 1,
+    price: 2748,
+    title: "Build on Earth",
+    subHead: "Starter package",
+
     items: [
       "4 meetings",
       "3 to 5 basic systems",
@@ -16,6 +20,9 @@ const pricingItems = [
   },
   {
     id: 2,
+    price: 4998,
+    title: "Flight to Mars",
+    subHead: "Simplify & automate complex project",
     items: [
       "4 meetings",
       "5 to 8 advanced systems",
@@ -28,6 +35,9 @@ const pricingItems = [
   },
   {
     id: 3,
+    price: "Custom",
+    title: "Chose where to go",
+    subHead: "Lets build your dream together",
     items: [
       "Build your custom plan",
       "Unlimited automations",

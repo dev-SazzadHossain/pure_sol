@@ -6,25 +6,29 @@ import rihgtIcons from "../../../../public/assets/Right Icon.png";
 import Link from "next/link";
 
 const PricingCard = ({ item }) => {
-  const { items, id, buttonText } = item || {};
+  const { items, id, buttonText, price, title, subHead } = item || {};
   return (
     <div className="py-[32px] px-[24px] border-[1px] border-[#E9E3FC] rounded-[12px] ">
       <div
         className={`flex items-center justify-center text-[30px] font-semibold ${readexPro.className}`}
       >
-        <h2>$2748</h2>{" "}
-        <span className="text-[#6F7782] text-[12px]">/month</span>
+        <h2> {id === 3 ? price : `$ ${price} `}</h2>{" "}
+        {id === 3 ? (
+          ""
+        ) : (
+          <span className="text-[#6F7782] text-[12px]">/month</span>
+        )}
       </div>
       <h3
         className={`font-semibold ${readexPro.className} text-[18px] text-center text-[#333333]`}
       >
-        Build on Earth
+        {title}
       </h3>
       <div className="flex items-center justify-center gap-2">
         <h4
           className={`font-semibold ${readexPro.className} text-[12px] text-center text-[#333333]`}
         >
-          Starter package
+          {subHead}
         </h4>
         <figure>
           <Image src={icons} alt="icons" />

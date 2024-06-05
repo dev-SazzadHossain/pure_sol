@@ -25,7 +25,7 @@ const singleWork = [
 
 const Work = () => {
   return (
-    <div>
+    <div id="work">
       <h2
         className={`text-center textColor font-bold text-[20px] ${readexPro.className}`}
       >

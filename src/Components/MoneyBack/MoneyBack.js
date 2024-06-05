@@ -5,7 +5,10 @@ import img from "../../../public/assets/Group 8402.png";
 
 const MoneyBack = () => {
   return (
-    <div className="backgroundColor py-[40px] rounded-[50px] relative">
+    <div
+      id="solution"
+      className="backgroundColor py-[40px] rounded-[50px] relative"
+    >
       <figure className=" absolute bottom-[16px] left-[30px] w-[75px] h-[91px]">
         <Image src={img} alt="image" />
       </figure>

@@ -41,7 +41,7 @@ const pricingItems = [
 
 const Pricing = () => {
   return (
-    <div className="py-[96px] lg:w-[1160px] mx-auto">
+    <div id="pricing" className="py-[96px] lg:w-[1160px] mx-auto">
       <h2
         className={`text-center textColor font-bold text-[20px] ${readexPro.className} tracking-wider`}
       >

@@ -55,7 +55,7 @@ const Faq = () => {
   };
 
   return (
-    <div>
+    <div className="pb-[130px]">
       <h1
         className={`text-[50px] font-bold ${readexPro.className} text-[#333333] text-center pb-[10px] transition-all duration-300 ease-in-out`}
       >

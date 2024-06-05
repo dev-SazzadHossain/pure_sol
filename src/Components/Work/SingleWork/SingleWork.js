@@ -5,8 +5,8 @@ import React from "react";
 const SingleWork = ({ work }) => {
   const { id, title, description } = work || {};
   return (
-    <div className="gradient-border  px-[32px] py-[24px] w-full h-[300px] max-h-auto">
-      <div className=" w-[64px] h-[64px]  gradient-border pb-[16px] flex justify-center items-center">
+    <div className="  gradient-border  px-[32px] py-[24px] w-full h-[300px] ">
+      <div className=" w-[64px] h-[64px]  gradient-border flex justify-center items-center ">
         <span
           className={`${readexPro.className} text-[32px] font-semibold textColor`}
         >
@@ -15,7 +15,7 @@ const SingleWork = ({ work }) => {
       </div>
       <Link
         href="#"
-        className={`subText text-[22px] font-semibold ${readexPro.className} pb-[10px]`}
+        className={`subText text-[22px] font-semibold ${readexPro.className} pb-[10px] pt-[16px]  inline-block`}
       >
         {title}
       </Link>

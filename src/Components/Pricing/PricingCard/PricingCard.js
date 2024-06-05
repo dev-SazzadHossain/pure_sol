@@ -8,7 +8,7 @@ import Link from "next/link";
 const PricingCard = ({ item }) => {
   const { items, id, buttonText } = item || {};
   return (
-    <div className="py-[32px] px-[24px] border-[1px] border-[#E9E3FC] rounded-[12px]">
+    <div className="py-[32px] px-[24px] border-[1px] border-[#E9E3FC] rounded-[12px] ">
       <div
         className={`flex items-center justify-center text-[30px] font-semibold ${readexPro.className}`}
       >

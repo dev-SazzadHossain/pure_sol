@@ -5,7 +5,7 @@ import { readexPro } from "@/utils/Font";
 
 const Footer = () => {
   return (
-    <div className="py-[120px]">
+    <div className="py-[120px] ">
       <div className="w-full flex justify-between lg:items-center">
         {/* logo  */}
         <figure className="w-[242px] h-[46px]">

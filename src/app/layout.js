@@ -18,8 +18,10 @@ export default function RootLayout({ children }) {
           <Header />
         </div>
         {children}
-        <div className="2xl:w-[1920px] xl:w-[1320px] lg:w-[1320px] md:w-full sm:w-full w-full mx-auto 2xl:px-0 xl:px-0 lg:px-0 px-5">
-          <Footer />
+        <div className="bg-[#F4F1FD]">
+          <div className="2xl:w-[1920px] xl:w-[1320px] lg:w-[1320px] md:w-full sm:w-full w-full mx-auto 2xl:px-0 xl:px-0 lg:px-0 px-5">
+            <Footer />
+          </div>
         </div>
       </body>
     </html>

@@ -225,7 +225,7 @@ const Policy = () => {
           </div>
 
           {/* Changes to This Privacy Policy */}
-          <div className="pt-[52px]">
+          <div className="pt-[52px] pb-[80px]">
             <h3
               className={`text-[#4A326F] ${readexPro.className} font-bold text-[30px] `}
             >

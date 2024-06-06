@@ -10,10 +10,10 @@ const Policy = () => {
         Privacy Policy
       </h2>
 
-      <div className="2xl:w-[1920px] xl:w-[1320px] lg:w-[1320px] md:w-full sm:w-full w-full mx-auto 2xl:px-0 xl:px-0 lg:px-0 px-5">
+      <div className="2xl:container mx-auto xl:container lg:container md:container sm:container container relative py-10 px-5 2xl:px-0 xl:px-0 lg:px-0">
         <div className="lg:w-[920px] mx-auto w-full ">
           <p
-            className={`text-[#6F7782] ${nunito.className} font-medium text-[24px] leading-[24px] pt-[80px]`}
+            className={`text-[#6F7782] ${nunito.className} font-medium text-[24px] leading-[30px] pt-[80px]`}
           >
             At PureSol, we are committed to protecting your privacy. This
             Privacy Policy explains how we collect, use, declist-decimallose,
@@ -36,27 +36,31 @@ const Policy = () => {
             </small>
             <ul className="pl-6 flex flex-col justify-center">
               <li
-                className={`${nunito.className} text-[16px] font-bold text-[#6F7782] list-decimal`}
+                className={`${nunito.className} text-[16px] font-medium text-[#6F7782] list-decimal`}
               >
-                Personal Information: When you register for our services, we may
-                collect personal information such as your name, email address,
-                phone number, and payment information.{" "}
+                <span className="font-bold"> Personal Information:</span> When
+                you register for our services, we may collect personal
+                information such as your name, email address, phone number, and
+                payment information.{" "}
               </li>
               <li
-                className={`${nunito.className} text-[16px] font-bold text-[#6F7782] list-decimal`}
+                className={`${nunito.className} text-[16px] font-medium text-[#6F7782] list-decimal`}
               >
-                Usage Data: We may collect information on how you access and use
-                our services. This includes your IP address, browser type,
-                device information, pages visited, and the time and date of your
-                visits.{" "}
+                <span className="font-bold">Usage Data:</span> We may collect
+                information on how you access and use our services. This
+                includes your IP address, browser type, device information,
+                pages visited, and the time and date of your visits.{" "}
               </li>
               <li
-                className={`${nunito.className} text-[16px] font-bold text-[#6F7782] list-decimal`}
+                className={`${nunito.className} text-[16px] font-medium text-[#6F7782] list-decimal`}
               >
-                Cookies and Tracking Technologies: We use cookies and similar
-                tracking technologies to track activity on our services and hold
-                certain information. You can instruct your browser to refuse all
-                cookies or to indicate when a cookie is being sent.{" "}
+                <span className="font-bold">
+                  Cookies and Tracking Technologies:
+                </span>{" "}
+                We use cookies and similar tracking technologies to track
+                activity on our services and hold certain information. You can
+                instruct your browser to refuse all cookies or to indicate when
+                a cookie is being sent.{" "}
               </li>
             </ul>
           </div>
@@ -74,34 +78,40 @@ const Policy = () => {
             </small>
             <ul className="pl-6 flex flex-col justify-center">
               <li
-                className={`${nunito.className} text-[16px] font-bold text-[#6F7782] list-disc`}
+                className={`${nunito.className} text-[16px] font-medium text-[#6F7782] list-disc`}
               >
-                To Provide and Maintain Our Service: Ensuring our services
-                function as intended and providing customer support.
+                <span className="font-bold">
+                  To Provide and Maintain Our Service:
+                </span>{" "}
+                Ensuring our services function as intended and providing
+                customer support.
               </li>
               <li
-                className={`${nunito.className} text-[16px] font-bold text-[#6F7782] list-disc`}
+                className={`${nunito.className} text-[16px] font-medium text-[#6F7782] list-disc`}
               >
-                To Improve Our Services: Analyzing usage data to understand how
-                our services are used and making improvements. visits.{" "}
+                <span className="font-bold">To Improve Our Services:</span>{" "}
+                Analyzing usage data to understand how our services are used and
+                making improvements. visits.{" "}
               </li>
               <li
-                className={`${nunito.className} text-[16px] font-bold text-[#6F7782] list-disc`}
+                className={`${nunito.className} text-[16px] font-medium text-[#6F7782] list-disc`}
               >
-                To Process Payments: Managing your subscriptions and processing
-                payments.
+                <span className="font-bold">To Process Payments:</span> Managing
+                your subscriptions and processing payments.
               </li>
               <li
-                className={`${nunito.className} text-[16px] font-bold text-[#6F7782] list-disc`}
+                className={`${nunito.className} text-[16px] font-medium text-[#6F7782] list-disc`}
               >
-                To Communicate with You: Sending updates, newsletters, and other
-                information related to our services.
+                <span className="font-bold">To Communicate with You:</span>{" "}
+                Sending updates, newsletters, and other information related to
+                our services.
               </li>
               <li
-                className={`${nunito.className} text-[16px] font-bold text-[#6F7782] list-disc`}
+                className={`${nunito.className} text-[16px] font-medium text-[#6F7782] list-disc`}
               >
-                To Ensure Security: Monitoring and analyzing activity to detect
-                and prevent fraudulent or unauthorized activities.
+                <span className=" font-bold">To Ensure Security:</span>{" "}
+                Monitoring and analyzing activity to detect and prevent
+                fraudulent or unauthorized activities.
               </li>
             </ul>
           </div>
@@ -121,25 +131,26 @@ const Policy = () => {
             </small>
             <ul className="pl-6 flex flex-col justify-center">
               <li
-                className={`${nunito.className} text-[16px] font-bold text-[#6F7782] list-disc`}
+                className={`${nunito.className} text-[16px] font-medium text-[#6F7782] list-disc`}
               >
-                With Service Providers: We may share your information with
-                third-party service providers to help us operate our business,
-                such as payment processors and data hosting services.
+                <span className="font-bold">With Service Providers:</span> We
+                may share your information with third-party service providers to
+                help us operate our business, such as payment processors and
+                data hosting services.
               </li>
               <li
-                className={`${nunito.className} text-[16px] font-bold text-[#6F7782] list-disc`}
+                className={`${nunito.className} text-[16px] font-medium text-[#6F7782] list-disc`}
               >
-                For Legal Reasons: We may disclose your information if required
-                to do so by law or in response to valid requests by public
-                authorities.
+                <span className="font-bold">For Legal Reasons:</span> We may
+                disclose your information if required to do so by law or in
+                response to valid requests by public authorities.
               </li>
               <li
-                className={`${nunito.className} text-[16px] font-bold text-[#6F7782] list-disc`}
+                className={`${nunito.className} text-[16px] font-medium text-[#6F7782] list-disc`}
               >
-                Business Transfers: In the event of a merger, acquisition, or
-                sale of assets, your personal information may be transferred as
-                part of the transaction.
+                <span className=" font-bold">Business Transfers:</span> In the
+                event of a merger, acquisition, or sale of assets, your personal
+                information may be transferred as part of the transaction.
               </li>
             </ul>
           </div>
@@ -178,30 +189,32 @@ const Policy = () => {
             </small>
             <ul className="pl-6 flex flex-col justify-center">
               <li
-                className={`${nunito.className} text-[16px] font-bold text-[#6F7782] list-disc`}
+                className={`${nunito.className} text-[16px] font-medium text-[#6F7782] list-disc`}
               >
-                Access and Update: You can access and update your personal
-                information by logging into your account or contacting us
-                directly.
+                <span className=" font-bold">Access and Update:</span> You can
+                access and update your personal information by logging into your
+                account or contacting us directly.
               </li>
               <li
-                className={`${nunito.className} text-[16px] font-bold text-[#6F7782] list-disc`}
+                className={`${nunito.className} text-[16px] font-medium text-[#6F7782] list-disc`}
               >
-                Delete: You can request the deletion of your personal
-                information, subject to certain exceptions.
+                <span className=" font-bold"> Delete:</span> You can request the
+                deletion of your personal information, subject to certain
+                exceptions.
               </li>
               <li
-                className={`${nunito.className} text-[16px] font-bold text-[#6F7782] list-disc`}
+                className={`${nunito.className} text-[16px] font-medium text-[#6F7782] list-disc`}
               >
-                Restrict Processing: You can request that we restrict the
-                processing of your personal information under certain
-                conditions.
+                <span className=" font-bold">Restrict Processing:</span> You can
+                request that we restrict the processing of your personal
+                information under certain conditions.
               </li>
               <li
-                className={`${nunito.className} text-[16px] font-bold text-[#6F7782] list-disc`}
+                className={`${nunito.className} text-[16px] font-medium text-[#6F7782] list-disc`}
               >
-                Data Portability: You can request a copy of your personal
-                information in a structured, machine-readable format.
+                <span className="font-bold">Data Portability:</span> You can
+                request a copy of your personal information in a structured,
+                machine-readable format.
               </li>
             </ul>
           </div>

@@ -15,6 +15,9 @@ module.exports = {
           "linear-gradient(90deg, #926EFB 0%, #465BD7 50%, #4A56AB 100%)",
       },
     },
+    container: {
+      center: true,
+    },
   },
   plugins: [],
 };

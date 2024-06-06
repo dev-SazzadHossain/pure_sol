@@ -5,7 +5,7 @@ import position from "../../../public/assets1/assets/group_1.png";
 
 const SubHero = () => {
   return (
-    <div className="2xl:container mx-auto xl:container lg:container md:container sm:container container relative  px-5 2xl:px-0 xl:px-0 lg:px-0">
+    <div className="2xl:container mx-auto xl:container lg:container md:container sm:container container relative  px-4">
       <div className=" tracking-[20%] leading-[30px] text-white text-center py-[24px]">
         <figure className=" absolute left-[91px] bottom-2">
           <Image src={position} alt="" width={100} height={100} />

@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
           </header>
           {children}
           <footer className="bg-[#F4F1FD]">
-            <div className="2xl:container mx-auto xl:container lg:container md:container sm:container container relative px-5 2xl:px-0 xl:px-0 lg:px-0 pt-[120px] pb-[40px]">
+            <div className="2xl:container  xl:container lg:container md:container sm:container container relative px-4 pt-[120px] pb-[40px] mx-auto">
               <Footer />
             </div>
           </footer>

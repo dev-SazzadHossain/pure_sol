@@ -163,7 +163,7 @@ const Policy = () => {
               Data Security{" "}
             </h3>
             <p
-              className={`${nunito.className} text-[16px] font-bold text-[#6F7782] leading-[24px]`}
+              className={`${nunito.className} text-[16px] font-medium text-[#6F7782] leading-[24px]`}
             >
               We implement reasonable measures to protect your personal
               information from unauthorized access, use, or disclosure. However,
@@ -182,7 +182,7 @@ const Policy = () => {
               Your Privacy Rights
             </h3>
             <small
-              className={`${nunito.className} text-[16px] font-bold text-[#6F7782]`}
+              className={`${nunito.className} text-[16px] font-medium text-[#6F7782]`}
             >
               Depending on your jurisdiction, you may have the following rights
               regarding your personal information:
@@ -220,7 +220,7 @@ const Policy = () => {
           </div>
 
           {/* Limitation of Liability */}
-          <div className="pt-[52px]">
+          {/* <div className="pt-[52px]">
             <h3
               className={`text-[#4A326F] ${readexPro.className} font-bold text-[30px] `}
             >
@@ -235,7 +235,7 @@ const Policy = () => {
               services. Our total liability is limited to the amount you have
               paid for the Service.
             </p>
-          </div>
+          </div> */}
 
           {/* Changes to This Privacy Policy */}
           <div className="pt-[52px] pb-[80px]">
@@ -245,7 +245,7 @@ const Policy = () => {
               Changes to This Privacy Policy
             </h3>
             <p
-              className={`${nunito.className} text-[16px] font-bold text-[#6F7782] leading-[24px]`}
+              className={`${nunito.className} text-[16px] font-medium text-[#6F7782] leading-[24px]`}
             >
               We may update our Privacy Policy from time to time. If we make
               significant changes, we will notify you through email or our

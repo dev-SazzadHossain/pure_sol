@@ -13,7 +13,7 @@ const nunito = Nunito({ subsets: ["latin"] });
 const Header = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div className="2xl:container mx-auto xl:container lg:container md:container sm:container container relative py-10 px-5 2xl:px-0 xl:px-0 lg:px-0">
+    <div className="2xl:container xl:container lg:container md:container sm:container container mx-auto relative py-10  px-4">
       <nav className="flex justify-between items-center ">
         <Link href="/" className="w-full">
           {/* logo  */}

@@ -6,7 +6,7 @@ import React from "react";
 const readexPro = Readex_Pro({ subsets: ["latin"] });
 const Hero = () => {
   return (
-    <div className="2xl:container mx-auto xl:container lg:container md:container sm:container container relative py-[154px] px-5 2xl:px-0 xl:px-0 lg:px-0">
+    <div className="2xl:container mx-auto xl:container lg:container md:container sm:container container relative py-[154px] px-4">
       {" "}
       <div className=" leading-[90px]">
         <h1

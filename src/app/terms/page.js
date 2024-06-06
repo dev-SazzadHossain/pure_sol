@@ -28,7 +28,7 @@ const Terms = () => {
               What We Expect from You
             </h3>
             <small
-              className={`${nunito.className} text-[16px] font-bold text-[#6F7782]`}
+              className={`${nunito.className} text-[16px] font-medium text-[#6F7782]`}
             >
               For clarity, here are some key definitions:
             </small>

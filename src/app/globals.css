@@ -11,6 +11,9 @@ html {
   scrollbar-width: thin;
   scroll-behavior: smooth;
 }
+body {
+  overflow-x: hidden;
+}
 ol,
 li {
   list-style: none;

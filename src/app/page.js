@@ -21,7 +21,7 @@ export default function Home() {
         <SubHero />
       </section>
       <section className="w-full">
-        <div className="2xl:container mx-auto xl:container lg:container md:container sm:container container relative py-[93px] px-5 2xl:px-0 xl:px-0 lg:px-0">
+        <div className="2xl:container xl:container lg:container md:container sm:container container relative py-[93px] px-4  mx-auto ">
           <Work />
           <Menu />
           <MoneyBack />

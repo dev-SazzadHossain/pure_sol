@@ -2,7 +2,7 @@
 import { Nunito, Readex_Pro } from "next/font/google";
 import Image from "next/image";
 import React, { useState } from "react";
-import logo from "../../../public/assets1/assets/main_logo.png";
+import logo from "../../../public/assets1/assets/main_logo.svg";
 import Link from "next/link";
 import Menubar from "@/utils/Menubar/Menubar";
 

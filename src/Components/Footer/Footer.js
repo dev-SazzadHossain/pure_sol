@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../../public/assets/Main Logo.png";
+import logo from "../../../public/assets1/assets/main_logo.svg";
 import Image from "next/image";
 import { nunito, readexPro } from "@/utils/Font";
 import footer_logo from "../../../public/assets/footer.png";
@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <>
       {" "}
-      <div className=" w-full flex justify-between lg:items-center">
+      <div className=" w-full flex justify-between lg:items-center gap-5">
         {/* logo  */}
         <Link href="/">
           <figure className="w-[242px] h-[46px]">

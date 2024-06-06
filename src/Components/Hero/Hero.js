@@ -26,10 +26,10 @@ const Hero = () => {
         We build digital systems & automations to jumpstart your scaling to 3x
         and more...
       </p>
-      <div className="text-center">
+      <div className="text-center ">
         <Link
           href="/contact"
-          className={` border border-[#926efb] shadow shadow-[#754DE9]/20 p-custom  rounded-[10px] font-semibold text-[16px] ${nunito.className}`}
+          className={` button_hover border border-[#926efb] shadow shadow-[#754DE9]/20 p-custom  rounded-[10px] font-semibold text-[16px] ${nunito.className}`}
         >
           Book a discovery call
         </Link>

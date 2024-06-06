@@ -81,3 +81,25 @@ li {
 .teamsColor {
   background: linear-gradient(90deg, #926efb 0%, #465bd7 100%, #4a56ab 100%);
 }
+
+.button_hover {
+  background: inherit;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  color: black;
+}
+
+.button_hover:hover {
+  background: #926efb;
+  color: #fff;
+}
+
+.signUp_buttonHover:hover {
+  /* transition: all 0.3s ease-in-out; */
+  background: linear-gradient(
+    119.19deg,
+    #926efb 1.65%,
+    #465bd7 126.29%,
+    #4a56ab 126.29%
+  );
+  color: white;
+}

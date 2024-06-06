@@ -116,7 +116,7 @@ const PricingCard = ({ item }) => {
           <button
             className={`px-[36px] py-[12px] ${
               item?.id == 3
-                ? "border-[#333333] border-[1px] shadow-[0_4px_6px_-1px_rgba(117,77,233,0.15),_0_2px_4px_-2px_rgba(117,77,233,0.15)] font-semibold text-[15px] "
+                ? "border-[#333333] border-[1px] shadow-[0_4px_6px_-1px_rgba(117,77,233,0.15),_0_2px_4px_-2px_rgba(117,77,233,0.15)] font-semibold text-[15px] signUp_buttonHover  "
                 : "button_bg text-white border-[1px] border-[#4A326F]"
             } rounded-[16px]  text-[16px] font-semibold  ${nunito.className} `}
           >

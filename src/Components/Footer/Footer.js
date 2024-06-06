@@ -4,6 +4,7 @@ import Image from "next/image";
 import { nunito, readexPro } from "@/utils/Font";
 import footer_logo from "../../../public/assets/footer.png";
 import Link from "next/link";
+import MainLogo from "@/utils/svg/MainLogo";
 
 const Footer = () => {
   return (
@@ -12,9 +13,9 @@ const Footer = () => {
       <div className=" w-full flex justify-between lg:items-center gap-5">
         {/* logo  */}
         <Link href="/">
-          <figure className="w-[242px] h-[46px]">
-            <Image src={logo} alt="logo" width={242} height={46} />
-          </figure>
+          <div className="w-[242px] h-[46px]">
+            <MainLogo />
+          </div>
         </Link>
         <ul className="lg:flex gap-20">
           <li

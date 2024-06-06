@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import logo from "../../../public/assets1/assets/main_logo.svg";
 import Link from "next/link";
 import Menubar from "@/utils/Menubar/Menubar";
+import MainLogo from "@/utils/svg/MainLogo";
 
 const readexPro = Readex_Pro({ subsets: ["latin"] });
 const nunito = Nunito({ subsets: ["latin"] });
@@ -16,9 +17,9 @@ const Header = () => {
       <nav className="flex justify-between items-center ">
         <Link href="/" className="w-full">
           {/* logo  */}
-          <figure className="w-[242px] h-[46px]">
-            <Image src={logo} alt="logo" width={242} height={46} />
-          </figure>
+          <div className="w-[242px] h-[46px]">
+            <MainLogo />
+          </div>
         </Link>
         {/* navList */}
         <div className={`w-full relative text-center ${readexPro.className}`}>
@@ -41,7 +42,7 @@ const Header = () => {
         <div className="lg:block text-end hidden w-full">
           <Link
             href="/contact"
-            className={` border border-[#926efb] shadow shadow-[#754DE9]/20 p-custom  rounded-[10px] font-semibold text-sm ${nunito.className}`}
+            className={` border border-[#926efb] shadow shadow-[#754DE9]/20 p-custom  rounded-[10px] font-semibold text-sm ${nunito.className} button_hover`}
           >
             Book a discovery call
           </Link>

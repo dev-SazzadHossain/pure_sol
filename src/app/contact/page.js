@@ -10,7 +10,7 @@ import edit from "../../../public/assets1/assets/group_3.png";
 import Image from "next/image";
 const page = () => {
   return (
-    <div className="container mx-auto lg:px-0 px-5">
+    <div className="2xl:container mx-auto xl:container lg:container md:container sm:container container px-5 2xl:px-0 xl:px-0 lg:px-0">
       <div className="lg:flex  justify-between py-20 ">
         <div className="lg:w-1/2 ">
           <h4
@@ -38,10 +38,7 @@ const page = () => {
           </p>
         </div>
 
-        <form
-          className="lg:w-1/2 border-[2px] border-[#4A326F
-] p-[36px] rounded-[10px]"
-        >
+        <form className="lg:w-1/2 border border-[#926efb] shadow shadow-[#754DE9]/20 p-[36px] rounded-[10px]">
           <div>
             <div className="flex items-center border-[1px] border-[#E9E3FC] rounded-[10px]">
               <div className="pl-4">
@@ -101,7 +98,7 @@ const page = () => {
               <div className="pl-2">
                 <input
                   className="py-[20px] outline-none w-full "
-                  type="email"
+                  type="text"
                   placeholder="Subject"
                   aria-label="Full name"
                 />

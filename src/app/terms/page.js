@@ -5,15 +5,15 @@ const Terms = () => {
   return (
     <div className="pt-[40px]">
       <h2
-        className={`text-center py-[64px] backgroundColor text-[50px] font-semibold ${readexPro.className} text-white`}
+        className={`text-center py-[64px] teamsColor text-[50px] font-semibold ${readexPro.className} text-white w-full`}
       >
         Terms & Conditions
       </h2>
 
       <div className="2xl:w-[1920px] xl:w-[1320px] lg:w-[1320px] md:w-full sm:w-full w-full mx-auto 2xl:px-0 xl:px-0 lg:px-0 px-5">
-        <div className="lg:w-[920px] mx-auto w-full ">
+        <div className="2xl:w-[920px] xl:w-[920px] lg:w-[920px] md:w-full sm:w-full mx-auto w-full ">
           <p
-            className={`text-[#6F7782] ${nunito.className} font-medium text-[24px] leading-[24px] pt-[80px]`}
+            className={`text-[#6F7782] ${nunito.className} font-medium text-[24px] leading-[30px] pt-[80px]`}
           >
             These Terms and Conditions ("Terms") outline the rules and
             regulations for the use of PureSol's AI automation services. By
@@ -22,11 +22,11 @@ const Terms = () => {
             services. We encourage you to read these Terms thoroughly.
           </p>
           <div className="pt-[52px]">
-            <h4
+            <h3
               className={`text-[#4A326F] ${readexPro.className} font-bold text-[30px] `}
             >
               What We Expect from You
-            </h4>
+            </h3>
             <small
               className={`${nunito.className} text-[16px] font-bold text-[#6F7782]`}
             >
@@ -34,25 +34,29 @@ const Terms = () => {
             </small>
             <ul className="pl-6 flex flex-col justify-center">
               <li
-                className={`${nunito.className} text-[16px] font-bold text-[#6F7782] list-disc`}
+                className={`${nunito.className} text-[16px] font-medium text-[#6F7782] list-disc`}
               >
-                Service: The AI automation services offered by PureSol.
+                <span className=" font-bold"> Service: </span>
+                The AI automation services offered by PureSol.
               </li>
               <li
-                className={`${nunito.className} text-[16px] font-bold text-[#6F7782] list-disc`}
+                className={`${nunito.className} text-[16px] font-medium text-[#6F7782] list-disc`}
               >
-                User: Any person or entity utilizing our services.
+                <span className="font-bold">User: </span>Any person or entity
+                utilizing our services.
               </li>
               <li
-                className={`${nunito.className} text-[16px] font-bold text-[#6F7782] list-disc`}
+                className={`${nunito.className} text-[16px] font-medium text-[#6F7782] list-disc`}
               >
-                Subscription: The recurring payment plan selected by the User.
+                <span className="font-bold">Subscription:</span> The recurring
+                payment plan selected by the User.
               </li>
               <li
-                className={`${nunito.className} text-[16px] font-bold text-[#6F7782] list-disc`}
+                className={`${nunito.className} text-[16px] font-medium text-[#6F7782] list-disc`}
               >
-                Content: Any data, text, software, images, or other materials
-                uploaded, downloaded, or appearing on the Service.
+                <span className="font-bold">Content:</span> Any data, text,
+                software, images, or other materials uploaded, downloaded, or
+                appearing on the Service.
               </li>
             </ul>
           </div>
@@ -64,29 +68,29 @@ const Terms = () => {
               Your Responsibilities
             </h4>
             <small
-              className={`${nunito.className} text-[16px] font-bold text-[#6F7782]`}
+              className={`${nunito.className} text-[16px] font-medium text-[#6F7782]`}
             >
               As a user of PureSol, you agree to:
             </small>
             <ul className="pl-6 flex flex-col justify-center">
               <li
-                className={`${nunito.className} text-[16px] font-bold text-[#6F7782] list-disc`}
+                className={`${nunito.className} text-[16px] font-medium text-[#6F7782] list-disc`}
               >
                 Provide accurate and up-to-date information during registration.{" "}
               </li>
               <li
-                className={`${nunito.className} text-[16px] font-bold text-[#6F7782] list-disc`}
+                className={`${nunito.className} text-[16px] font-medium text-[#6F7782] list-disc`}
               >
                 Keep your account information confidential and secure.{" "}
               </li>
               <li
-                className={`${nunito.className} text-[16px] font-bold text-[#6F7782] list-disc`}
+                className={`${nunito.className} text-[16px] font-medium text-[#6F7782] list-disc`}
               >
                 Use our services in compliance with applicable laws and
                 regulations.{" "}
               </li>
               <li
-                className={`${nunito.className} text-[16px] font-bold text-[#6F7782] list-disc`}
+                className={`${nunito.className} text-[16px] font-medium text-[#6F7782] list-disc`}
               >
                 Avoid any misuse of the Service or activities that violate these
                 Terms.
@@ -102,7 +106,7 @@ const Terms = () => {
               Your Responsibilities
             </h4>
             <p
-              className={`${nunito.className} text-[16px] font-bold text-[#6F7782] leading-[24px]`}
+              className={`${nunito.className} text-[16px] font-medium text-[#6F7782] leading-[24px]`}
             >
               PureSol commits to delivering the AI automation services described
               in your chosen subscription plan. We reserve the right to modify,
@@ -120,7 +124,7 @@ const Terms = () => {
               Subscription and Payment{" "}
             </h4>
             <p
-              className={`${nunito.className} text-[16px] font-bold text-[#6F7782] leading-[24px]`}
+              className={`${nunito.className} text-[16px] font-medium text-[#6F7782] leading-[24px]`}
             >
               By subscribing to our services, you agree to pay the fees
               specified in your chosen plan. Payments are made in advance on a
@@ -139,7 +143,7 @@ const Terms = () => {
               Termination Policy
             </h4>
             <p
-              className={`${nunito.className} text-[16px] font-bold text-[#6F7782] leading-[24px]`}
+              className={`${nunito.className} text-[16px] font-medium text-[#6F7782] leading-[24px]`}
             >
               You may cancel your subscription at any time by contacting our
               support team. PureSol reserves the right to suspend or terminate
@@ -157,7 +161,7 @@ const Terms = () => {
               Limitation of Liability
             </h4>
             <p
-              className={`${nunito.className} text-[16px] font-bold text-[#6F7782] leading-[24px]`}
+              className={`${nunito.className} text-[16px] font-medium text-[#6F7782] leading-[24px]`}
             >
               Our services are provided "as is" without any warranties, either
               express or implied. PureSol will not be liable for any indirect,
@@ -175,7 +179,7 @@ const Terms = () => {
               Privacy and Data Protection
             </h4>
             <p
-              className={`${nunito.className} text-[16px] font-bold text-[#6F7782] leading-[24px]`}
+              className={`${nunito.className} text-[16px] font-medium text-[#6F7782] leading-[24px]`}
             >
               Our Privacy Policy explains how we handle your personal data. By
               using our services, you consent to the collection and use of your
@@ -192,7 +196,7 @@ const Terms = () => {
               Intellectual Property Rights
             </h4>
             <p
-              className={`${nunito.className} text-[16px] font-bold text-[#6F7782] leading-[24px]`}
+              className={`${nunito.className} text-[16px] font-medium text-[#6F7782] leading-[24px]`}
             >
               All content, trademarks, and data on the Service are the property
               of PureSol or our licensors. You retain ownership of any content
@@ -210,7 +214,7 @@ const Terms = () => {
               Governing Law and Dispute Resolution
             </h4>
             <p
-              className={`${nunito.className} text-[16px] font-bold text-[#6F7782] leading-[24px]`}
+              className={`${nunito.className} text-[16px] font-medium text-[#6F7782] leading-[24px]`}
             >
               These Terms are governed by the laws of [Your Country/State]. Any
               disputes arising out of or related to these Terms will be resolved
@@ -225,12 +229,12 @@ const Terms = () => {
 
           <div className="pt-[52px] pb-[80px]">
             <h4
-              className={`text-[#4A326F] ${readexPro.className} font-bold text-[30px] `}
+              className={`text-[#4A326F] ${readexPro.className} font-medium text-[30px] `}
             >
               Changes to These Terms
             </h4>
             <p
-              className={`${nunito.className} text-[16px] font-bold text-[#6F7782] leading-[24px]`}
+              className={`${nunito.className} text-[16px] font-medium text-[#6F7782] leading-[24px]`}
             >
               We may update these Terms from time to time. If we make
               significant changes, we will notify you via email or our website.

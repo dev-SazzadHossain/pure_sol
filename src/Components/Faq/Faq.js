@@ -92,7 +92,7 @@ const Faq = () => {
                     </div>
                   ) : (
                     <div className="w-[30px] h-[30px] bg-white flex items-center justify-center rounded-full">
-                      <FiMinus color="black" size={30} />
+                      <FiMinus color="blue" size={30} />
                     </div>
                   )}
                 </span>

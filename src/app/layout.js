@@ -14,19 +14,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="main_section">
-          <main>
-            <header className="container mx-auto lg:px-0 md:px-5 px-5">
-              <Header />
-            </header>
-            {children}
-            <footer className="bg-[#F4F1FD]">
-              <div className="container mx-auto lg:px-0 px-5 pt-[120px]">
-                <Footer />
-              </div>
-            </footer>
-          </main>
-        </div>
+        <main>
+          <header>
+            <Header />
+          </header>
+          {children}
+          <footer className="bg-[#F4F1FD]">
+            <div className="2xl:container mx-auto xl:container lg:container md:container sm:container container relative px-5 2xl:px-0 xl:px-0 lg:px-0 pt-[120px] pb-[40px]">
+              <Footer />
+            </div>
+          </footer>
+        </main>
       </body>
     </html>
   );

@@ -6,7 +6,7 @@ import React from "react";
 const readexPro = Readex_Pro({ subsets: ["latin"] });
 const Hero = () => {
   return (
-    <>
+    <div className="2xl:container mx-auto xl:container lg:container md:container sm:container container relative py-[154px] px-5 2xl:px-0 xl:px-0 lg:px-0">
       {" "}
       <div className=" leading-[90px]">
         <h1
@@ -29,12 +29,12 @@ const Hero = () => {
       <div className="text-center">
         <Link
           href="/contact"
-          className={` shadow shadow-[#9747FF] p-custom  rounded-[10px] font-semibold text-[16px] ${nunito.className}`}
+          className={` border border-[#926efb] shadow shadow-[#754DE9]/20 p-custom  rounded-[10px] font-semibold text-[16px] ${nunito.className}`}
         >
           Book a discovery call
         </Link>
       </div>
-    </>
+    </div>
   );
 };
 

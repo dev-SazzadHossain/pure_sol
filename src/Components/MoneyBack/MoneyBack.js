@@ -7,7 +7,7 @@ const MoneyBack = () => {
   return (
     <div
       id="solution"
-      className="backgroundColor py-[40px] rounded-[50px] relative"
+      className="backgroundColor py-[40px] rounded-[50px] relative my-10"
     >
       <figure className=" absolute bottom-[16px] left-[30px] w-[75px] h-[91px]">
         <Image src={img} alt="image" />

@@ -55,73 +55,25 @@ const Faq = () => {
   };
 
   return (
-    <div className="pb-[130px]">
+    <div className="pb-[120px]">
       <h1
-        className={`text-[50px] font-bold ${readexPro.className} text-[#333333] text-center pb-[10px] transition-all duration-300 ease-in-out`}
+        className={`text-[50px] font-semibold ${readexPro.className} text-[#333333] text-center pb-[10px] transition-all duration-300 ease-in-out`}
       >
         Have a question?
       </h1>
-      <div>
-        {/* <div className="grid lg:grid-cols-2 grid-cols-1 gap-x-[36px] gap-y-[24px]">
-          {faqData.map((item, index) => (
-            <div
-              key={index}
-              className={`border p-4 rounded transition-all duration-300 ease-in-out ${
-                openIndex === index
-                  ? "backgroundColor text-white"
-                  : "bg-[#FAFAFC]"
-              }`}
-            >
-              <div
-                className="cursor-pointer flex justify-between items-center"
-                onClick={() => handleClick(index)}
-              >
-                <h2
-                  className={`text-[18px] font-semibold ${
-                    openIndex === index ? "text-white" : "text-[#333333]"
-                  }`}
-                >
-                  {item.question}
-                </h2>
-                <span>
-                  {openIndex === index ? (
-                    <Image src={minus} alt="minus" width={24} height={24} />
-                  ) : (
-                    <Image src={plus} alt="plus" width={24} height={24} />
-                  )}
-                </span>
-              </div>
-              <div
-                className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                  openIndex === index
-                    ? "max-h-[300px] opacity-100 pt-[10px]"
-                    : "max-h-0 opacity-0"
-                }`}
-              >
-                <p
-                  className={`mt-2 ${
-                    openIndex === index ? "block" : "hidden"
-                  } ${nunito.className} font-medium text-[16px]`}
-                >
-                  {item.answer}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div> */}
-      </div>
+
       <div className="faq-section mx-auto ">
-        <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 ">
+        <div className="grid lg:grid-cols-2 grid-cols-1 gap-[10px] ">
           {faqData.map((item, index) => (
             <div
               key={index}
               className="faq-item transition-all duration-300 ease-linear rounded-md"
             >
               <div
-                className={`flex items-center justify-between cursor-pointer p-5  rounded-t-md  ${
+                className={`flex items-center justify-between cursor-pointer  rounded-t-md  ${
                   openIndex === index
-                    ? "backgroundColor text-white "
-                    : "bg-[#FAFAFC] rounded-b-md"
+                    ? "faqColor text-white  p-10"
+                    : "bg-[#FAFAFC] rounded-b-md p-5"
                 }`}
                 onClick={() => handleClick(index)}
               >
@@ -141,7 +93,7 @@ const Faq = () => {
                 </span>
               </div>
               <div
-                className={`faq-answer overflow-hidden transition-all duration-300 ease-linear ${nunito.className} text-[16px] leading-[30px] rounded-b-md`}
+                className={`faq-answer overflow-hidden transition-all duration-300 ease-linear ${nunito.className} text-[16px] leading-[30px] rounded-b-md  `}
                 style={{
                   maxHeight: openIndex === index ? "100px" : "0px",
                   opacity: openIndex === index ? 1 : 0,
@@ -149,8 +101,8 @@ const Faq = () => {
               >
                 <div
                   className={`${
-                    openIndex == index ? "backgroundColor p-4 text-white" : ""
-                  }`}
+                    openIndex == index ? "faqColor  text-white" : ""
+                  } px-10 pb-10 `}
                 >
                   {item.answer}
                 </div>

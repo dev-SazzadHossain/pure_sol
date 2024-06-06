@@ -12,8 +12,8 @@ const nunito = Nunito({ subsets: ["latin"] });
 const Header = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div className=" container mx-auto relative pt-[10px]">
-      <nav className="flex justify-between items-center">
+    <div className="2xl:container mx-auto xl:container lg:container md:container sm:container container relative py-10 px-5 2xl:px-0 xl:px-0 lg:px-0">
+      <nav className="flex justify-between items-center ">
         <Link href="/" className="w-full">
           {/* logo  */}
           <figure className="w-[242px] h-[46px]">
@@ -41,7 +41,7 @@ const Header = () => {
         <div className="lg:block text-end hidden w-full">
           <Link
             href="/contact"
-            className={` border border-[rgba(117, 77, 233, 0.2)] p-custom  rounded-[10px] font-semibold text-sm ${nunito.className}`}
+            className={` border border-[#926efb] shadow shadow-[#754DE9]/20 p-custom  rounded-[10px] font-semibold text-sm ${nunito.className}`}
           >
             Book a discovery call
           </Link>

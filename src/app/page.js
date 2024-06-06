@@ -13,20 +13,15 @@ export default function Home() {
   return (
     <div>
       {/* middle */}
-      <div className="container mx-auto lg:px-0 px-5">
-        <section className=" w-full ">
-          {" "}
-          <div className="py-[154px]">
-            <Hero />
-          </div>
-        </section>
-      </div>
+      <section className=" w-full ">
+        <Hero />
+      </section>
       {/* middle */}
-      <section className=" relative">
+      <section className="relative backgroundColor">
         <SubHero />
       </section>
       <section className="w-full">
-        <div className="container mx-auto lg:px-0 px-5">
+        <div className="2xl:container mx-auto xl:container lg:container md:container sm:container container relative py-[93px] px-5 2xl:px-0 xl:px-0 lg:px-0">
           <Work />
           <Menu />
           <MoneyBack />

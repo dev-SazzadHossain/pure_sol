@@ -77,7 +77,7 @@ const Pricing = () => {
         automated solutions.
       </p>
       <p
-        className={`text-center text-[#6F7782] font-medium text-[18px] ${nunito.className} leading-[24px] menuText pb-[36px]`}
+        className={`text-center text-[#6F7782] font-medium text-[18px] ${nunito.className} leading-[24px] menuText pb-[32px]`}
       >
         Choose a package and let us build your systems and automation agents.
       </p>

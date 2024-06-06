@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import minus from "../../../public/assets/minus.png";
 import plus from "../../../public/assets/plus.png";
 import Image from "next/image";
+import { FiPlus, FiMinus } from "react-icons/fi";
 
 const faqData = [
   {
@@ -70,30 +71,34 @@ const Faq = () => {
               className="faq-item transition-all duration-300 ease-linear rounded-md"
             >
               <div
-                className={`flex items-center justify-between cursor-pointer  rounded-t-md  ${
+                className={`flex items-center justify-between cursor-pointer px-10 py-10  rounded-t-md  ${
                   openIndex === index
-                    ? "faqColor text-white  p-10"
-                    : "bg-[#FAFAFC] rounded-b-md p-5"
+                    ? "faqColor text-white"
+                    : "bg-[#FAFAFC] rounded-b-md"
                 }`}
                 onClick={() => handleClick(index)}
               >
                 <h3
                   className={`faq-question text-[18px] font-semibold ${
                     openIndex == index ? "" : "text-[#333333]"
-                  } ${readexPro.className}`}
+                  } ${readexPro.className} `}
                 >
                   {item.question}
                 </h3>
                 <span>
-                  {openIndex === index ? (
-                    <Image src={minus} alt="minus" width={24} height={24} />
+                  {openIndex !== index ? (
+                    <div className="w-[30px] h-[30px] faqColor flex items-center justify-center rounded-full">
+                      <FiPlus color="white" size={30} />
+                    </div>
                   ) : (
-                    <Image src={plus} alt="plus" width={24} height={24} />
+                    <div className="w-[30px] h-[30px] bg-white flex items-center justify-center rounded-full">
+                      <FiMinus color="black" size={30} />
+                    </div>
                   )}
                 </span>
               </div>
               <div
-                className={`faq-answer overflow-hidden transition-all duration-300 ease-linear ${nunito.className} text-[16px] leading-[30px] rounded-b-md  `}
+                className={`faq-answer overflow-hidden transition-all duration-300 ease-linear ${nunito.className} text-[16px] leading-[30px] rounded-b-md `}
                 style={{
                   maxHeight: openIndex === index ? "100px" : "0px",
                   opacity: openIndex === index ? 1 : 0,
@@ -102,7 +107,7 @@ const Faq = () => {
                 <div
                   className={`${
                     openIndex == index ? "faqColor  text-white" : ""
-                  } px-10 pb-10 `}
+                  } px-10  pb-10 `}
                 >
                   {item.answer}
                 </div>

@@ -8,6 +8,11 @@ import email from "../../../public/assets1/assets/email_icon.png";
 import subject from "../../../public/assets1/assets/group_4.png";
 import edit from "../../../public/assets1/assets/group_3.png";
 import Image from "next/image";
+import Person from "@/utils/svg/person";
+import Phone from "@/utils/svg/phone";
+import Email from "@/utils/svg/email";
+import Subject from "@/utils/svg/subject";
+import Edit from "@/utils/svg/edit";
 const page = () => {
   return (
     <div className="2xl:container mx-auto xl:container lg:container md:container sm:container container px-5 2xl:px-0 xl:px-0 lg:px-0">
@@ -42,7 +47,7 @@ const page = () => {
           <div>
             <div className="flex items-center border-[1px] border-[#E9E3FC] rounded-[10px]">
               <div className="pl-4">
-                <Image src={name} alt="name" width={20} height={20} />
+                <Person />
               </div>
               <div className="pl-2">
                 <input
@@ -59,7 +64,7 @@ const page = () => {
           <div className="pt-5">
             <div className="flex items-center border-[1px] border-[#E9E3FC] rounded-[10px]">
               <div className="pl-4">
-                <Image src={phone} width={20} height={20} />
+                <Phone />
               </div>
               <div className="pl-2">
                 <input
@@ -76,7 +81,7 @@ const page = () => {
           <div className="pt-5">
             <div className="flex items-center border-[1px] border-[#E9E3FC] rounded-[10px]">
               <div className="pl-4">
-                <Image src={email} width={20} height={20} />
+                <Email />
               </div>
               <div className="pl-2">
                 <input
@@ -93,7 +98,7 @@ const page = () => {
           <div className="pt-5">
             <div className="flex items-center border-[1px] border-[#E9E3FC] rounded-[10px]">
               <div className="pl-4">
-                <Image src={subject} width={20} height={20} />
+                <Subject />
               </div>
               <div className="pl-2">
                 <input
@@ -108,9 +113,9 @@ const page = () => {
           {/* message */}
 
           <div className="pt-5">
-            <div className="flex border-[1px] border-[#E9E3FC] rounded-[10px] pt-2">
+            <div className="flex border-[1px] border-[#E9E3FC] rounded-[10px] pt-3">
               <div className="pl-4 ">
-                <Image src={edit} width={20} height={20} />
+                <Edit />
               </div>
               <div className="pl-2 w-full">
                 <textarea
